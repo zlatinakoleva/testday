@@ -13,6 +13,9 @@ body {
   margin: auto;
   font-family: "Lato", sans-serif;
 }
+a {
+  text-decoration: none;
+}
 .title {
   font-family: "Exo";
   font-weight: bolder;
@@ -42,7 +45,7 @@ header {
   font-size: 14pt;
   padding: 0 15px;
 }
-.social i:nth-child(2) {
+.social a:nth-child(2) i {
   color: var(--theme-bg-color);
 }
 .contacts {
@@ -71,9 +74,11 @@ nav .logo {
 }
 .navigation li {
   font-size: 12pt;
-  color: var(--text-color);
   padding: 20px 17px;
   padding-bottom: 0;
+}
+.navigation li a {
+  color: var(--text-color);
 }
 .navigation li:last-child {
   padding-right: 0;
@@ -82,7 +87,7 @@ nav .logo {
 .navigation li:first-child {
   padding-left: 0;
 }
-.navigation .current {
+.navigation .current a {
   color: var(--theme-bg-color);
 }
 nav {
@@ -483,10 +488,13 @@ footer {
   padding: 13px 0;
   border-bottom: solid 1px #dcdcdc;
 }
+.list-links li a {
+  color: #666666;
+}
 .list-links li i {
   margin-right: 10px;
 }
-.current-link {
+.current-link a {
   color: var(--theme-bg-color);
 }
 
@@ -508,14 +516,13 @@ footer {
 .info-paragraph {
   color: #666666;
 }
-.social-footer i {
-  max-width: 30px;
-  max-height: 30px;
+.social-footer a i {
+  color: var(--font-awesome);
   padding: 10px;
   border: solid 1px var(--text-color);
-  color: var(--font-awesome);
 }
-.social-footer i:first-child {
+
+.social-footer a:first-child i {
   border: none;
 }
 .social-footer .current-social {
@@ -543,4 +550,7 @@ footer {
   list-style: none;
   margin-right: 20px;
   margin-left: 0;
+}
+.small-menu li a {
+  color: var(--font-awesome);
 }
